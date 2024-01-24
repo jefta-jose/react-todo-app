@@ -1,0 +1,116 @@
+:root {
+  --Very-Dark-Blue: hsl(235, 21%, 11%);
+  --Very-Dark-Desaturated-Blue: hsl(235, 24%, 19%);
+  --Light-Grayish-Blue: hsl(234, 39%, 85%);
+  --Light-Grayish-Blue: hsl(236, 33%, 92%);
+  --Dark-Grayish-Blue: hsl(234, 11%, 52%);
+  --Very-Dark-Grayish-Blue: hsl(233, 14%, 35%);
+  --Very-Dark-Grayish-Blue: hsl(237, 14%, 26%);
+}
+
+.list-container1 {
+  height: 54vh;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+
+  .add-a-new-task {
+    height: 10vh;
+    background-color: var(--Very-Dark-Desaturated-Blue);
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    border-radius: 10px;
+    padding-left: 1rem;
+
+    .add-to-form {
+      display: flex;
+      flex-direction: row;
+      gap: 1rem;
+
+      button {
+        width: 20px;
+        height: 20px;
+        border-radius: 50%;
+        cursor: pointer;
+        background-color: var(--Very-Dark-Desaturated-Blue);
+        border: 1px solid var(--Light-Grayish-Blue);
+      }
+
+      .place-holder {
+        background-color: var(--Very-Dark-Desaturated-Blue);
+        border: none;
+        font-weight: 500;
+        font-size: 18px;
+        color: white;
+      }
+    }
+  }
+
+  .list-body {
+    height: 46vh;
+    width: 100%;
+    background-color: var(--Very-Dark-Desaturated-Blue);
+    display: flex;
+    flex-direction: column;
+    border-radius: 10px;
+
+    .tasks {
+      height: 40vh;
+      overflow-y: auto;
+
+      .task {
+        height: 6.67vh;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        padding: 0 10px 0 10px;
+        border-bottom: 1px solid var(--Light-Grayish-Blue);
+        font-weight: 600;
+        color: var(--Light-Grayish-Blue);
+
+        .start {
+          display: flex;
+          flex-direction: row;
+          gap: 1rem;
+
+          button {
+            background-color: var(--Very-Dark-Blue);
+            width: 20px;
+            height: 20px;
+            border-radius: 50%;
+            border: 1px solid var(--Light-Grayish-Blue);
+            cursor: pointer;
+          }
+        }
+      }
+    }
+    .footer {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      gap: 0.7rem;
+      justify-content: space-between;
+      height: 5.8vh;
+      width: 98%;
+      margin: auto;
+      padding: 10px;
+      background-color: var(--Very-Dark-Desaturated-Blue);
+      color: var(--Light-Grayish-Blue);
+
+      .middle-footer {
+        display: flex;
+        flex-direction: row;
+        gap: 0.5rem;
+        cursor: pointer;
+        font-weight: 500;
+      }
+
+      .completed {
+        cursor: pointer;
+      }
+    }
+  }
+}

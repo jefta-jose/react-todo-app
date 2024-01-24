@@ -1,0 +1,38 @@
+:root {
+  --Very-Dark-Blue: hsl(235, 21%, 11%);
+  --Very-Dark-Desaturated-Blue: hsl(235, 24%, 19%);
+  --Light-Grayish-Blue: hsl(234, 39%, 85%);
+  --Light-Grayish-Blue: hsl(236, 33%, 92%);
+  --Dark-Grayish-Blue: hsl(234, 11%, 52%);
+  --Very-Dark-Grayish-Blue: hsl(233, 14%, 35%);
+  --Very-Dark-Grayish-Blue: hsl(237, 14%, 26%);
+}
+
+.todo-list-body {
+  width: 35vw;
+  height: 73vh;
+  margin: auto;
+  position: relative;
+  top: -10rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 5px;
+
+  .logo {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    height: 10vh;
+    width: 100%;
+
+    h1 {
+      color: white;
+    }
+  }
+
+  .list-holder {
+    height: 60vh;
+  }
+}

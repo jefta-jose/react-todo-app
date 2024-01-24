@@ -1,0 +1,13 @@
+.icons {
+  border: 2px solid black;
+  width: 20px;
+  height: 20px;
+  display: grid;
+  place-items: center;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.icons:hover {
+  background-color: var(--Light-Grayish-Blue);
+}
